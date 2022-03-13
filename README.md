@@ -21,7 +21,7 @@ favicon.png 500 x 500 (px)
 ## 오픈 그래프(The Open Graph protocol)  
 웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.      
 [더 많은 오픈그래프 속성 보기](https://ogp.me/)   
-```
+```plaintext
 og:type: 페이지의 유형(E.g, website, video.movie)
 og:site_name: 속한 사이트의 이름
 og:title: 페이지의 이름(제목)
@@ -32,7 +32,7 @@ og:url: 페이지 주소(URL)
 ## 트위터 카드(Twitter Cards)   
 웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
 [더 많은 트위터 카드 보기](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
-```
+```plaintext
 twitter:card: 페이지(카드)의 유형(E.g. summary, player)
 twitter:site: 속한 사이트의 이름
 twitter:title: 페이지의 이름(제목)
@@ -96,7 +96,7 @@ onYouTubePlayerAPIReady 함수 이름은 Youtube IFrame Player API에서 사용�
 그리고 함수는 전역(Global) 등록해야 합니다!   
 
 플레이어 매개변수(playerVars)에서 더 많은 옵션을 확인할 수 있습니다.   
-```java
+```javascript
 // Youtube IFrame API를 비동기로 로드합니다.
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -123,7 +123,7 @@ function onYouTubePlayerAPIReady() {
 ```
 
 ## 랜덤한 숫자를 생성하는 함수
-```java
+```javascript
 // 범위 랜덤 함수(소수점 2자리까지)
 function random(min, max) {
   // `.toFixed()`를 통해 반환된 문자 데이터를,
@@ -138,7 +138,7 @@ ScrollMagic은 스크롤과 요소의 상호 작용을 위한 자바스크립트
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
 ```
-```java
+```javascript
 new ScrollMagic
   .Scene({ // 감시할 장면(Scene)을 추가
     triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
