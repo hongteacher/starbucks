@@ -30,7 +30,7 @@ og:image: 페이지의 대표 이미지 주소(URL)
 og:url: 페이지 주소(URL)
 ```
 ## 트위터 카드(Twitter Cards)   
-웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
+웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.  
 [더 많은 트위터 카드 보기](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
 ```plaintext
 twitter:card: 페이지(카드)의 유형(E.g. summary, player)
