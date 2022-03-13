@@ -5,5 +5,7 @@
 로딩하기 때문에 `<link />` 를 작성할 필요가 없습니다.  
 favicon.png 파일을 사용하려면 다음과 같이 `<link />`를 작성하세요.  
   
->`<link rel="shortcut icon" href="favicon.ico" />`
->`<link rel="icon" href="./favicon.png" />`
+```html
+<link rel="shortcut icon" href="favicon.ico" /> 
+<link rel="icon" href="./favicon.png" />
+```
