@@ -147,4 +147,61 @@ new ScrollMagic
   .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
   ```
+  
+  ## Swiper Slider
+  > css
+  ```html
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+```
+>html
+```html
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+```
+
+> swiper option
+```javascript
+new Swiper('변경 .swiper', {
+    direction: 'horizontal', //방향
+    loop: true, //무한반복
+    autoplay : true, //자동시작
+    slidesPerView: 4, //한 번에 보여지는 슬라이드 개수
+    spaceBetween: 30, //슬라이드와 슬라이드 간격
+    navigation : {
+        prevEl : "변경 .swiper-prev",
+        nextEl : "변경 .swiper-next"
+    },
+    breakpoints: { //반응형 조건 속성
+    320: { //320 이상일 경우
+      slidesPerView: 1, //레이아웃 1열
+    },
+    768: {
+      slidesPerView: 3, //레이아웃 3열
+    },
+    1024: {
+      slidesPerView: 4, //레이아웃 4열
+    },
+  }
+});
+```
+
 
