@@ -151,7 +151,8 @@ new ScrollMagic
   ## Swiper Slider
   > css
   ```html
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 ```
 >html
 ```html
@@ -175,6 +176,21 @@ new ScrollMagic
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
 </div>
+```
+
+> swiper option
+```javascript
+new Swiper('변경 .swiper', {
+    direction: 'horizontal', //방향
+    loop: true, //무한반복
+    autoplay : true, //자동시작
+    slidesPerView: 5, //한 번에 보여지는 슬라이드 개수
+    spaceBetween: 30, //슬라이드와 슬라이드 간격
+    navigation : {
+        prevEl : "변경 .swiper-prev",
+        nextEl : "변경 .swiper-next"
+    },
+});
 ```
 
 
